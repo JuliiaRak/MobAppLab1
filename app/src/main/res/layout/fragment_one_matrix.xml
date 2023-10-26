@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0C7DF"
+    tools:context=".OneMatrix">
+
+    <!-- fragment_single_matrix.xml -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="432dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editTextMatrix"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="15dp"
+            android:hint="Введіть матрицю"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/buttonCalculateDeterminant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Визначник" />
+
+        <Button
+            android:id="@+id/buttonCalculateInverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Обернена матриця" />
+
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:layout_marginTop="360dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/saveOneMatrixButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Зберегти в файл" />
+
+        <Button
+            android:id="@+id/openOneMatrixButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Відкрити з файла" />
+    </LinearLayout>
+
+</FrameLayout>

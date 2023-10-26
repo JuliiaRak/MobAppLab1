@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0C7DF"
+    tools:context=".TwoMatrix">
+
+    <!-- fragment_single_matrix.xml -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editTextMatrix"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Введіть матрицю"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/editTextMatrix2"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Введіть матрицю"
+            android:layout_marginBottom="15dp"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/buttonSumm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Додати" />
+
+        <Button
+            android:id="@+id/buttonSubstraction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Відняти" />
+
+        <Button
+            android:id="@+id/buttonMultiply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Помножити" />
+
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:layout_marginTop="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="420dp">
+
+        <Button
+            android:id="@+id/saveTwoMatrixButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Зберегти в файл" />
+
+        <Button
+            android:id="@+id/openTwoMatrixButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Відкрити з файла" />
+    </LinearLayout>
+
+
+</FrameLayout>
